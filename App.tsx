@@ -4,10 +4,7 @@ import MapView from 'react-native-maps';
 
 export default function App() {
   let mapRef: MapView | null;
-
-
   
-
   useEffect(() => {
     if (mapRef !== null) {
       navigator.geolocation.getCurrentPosition((position)=> {
